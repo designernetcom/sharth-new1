@@ -65,7 +65,7 @@ $(function () {
   if ($(".owl-5").length > 0) {
     $(".owl-5").owlCarousel({
       center: false,
-      items: 1,
+      items: 3,
       loop: true,
       stagePadding: 0,
       margin: 20,
