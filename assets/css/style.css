@@ -4147,7 +4147,7 @@ footer {
   position: relative;
   margin-bottom: 10px;
   padding-left: 25px;
-/*   font-weight: 500; */
+  /* font-weight: 500; */
 }
 .service-details-area .details-item .details-client ul li:last-child {
   margin-bottom: 0;
