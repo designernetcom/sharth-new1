@@ -65,7 +65,7 @@ $(function () {
   if ($(".owl-5").length > 0) {
     $(".owl-5").owlCarousel({
       center: false,
-      items: 3,
+      items: 2,
       loop: true,
       stagePadding: 0,
       margin: 20,
@@ -78,13 +78,13 @@ $(function () {
         600: {
           margin: 20,
           nav: true,
-          items: 6,
+          items: 8,
         },
         1000: {
           margin: 20,
           stagePadding: 0,
           nav: true,
-          items: 6,
+          items: 8,
         },
       },
     });
