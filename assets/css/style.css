@@ -45,19 +45,44 @@ body {
   font-size: 17px;
 }
 
+
+/* Heading Styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #00a2e6;;
-  font-weight: 600;
-  font-family:"IBM Plex Sans", sans-serif;
+    font-family: "Montserrat", sans-serif ; /* Choose the font you prefer */
+    font-weight: bold;
+    color: #333; /* Adjust color for readability */
+    text-transform: uppercase; /* Makes headings look bolder */
+    letter-spacing: 1px; /* Slight letter spacing for clarity */
+    margin-bottom: 15px;
+}
+
+/* Example for specific heading */
+h1 {
+    font-size: 36px; /* Adjust size based on your design */
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 p {
   line-height: 1.7;
+  font-family: "Lora", serif; /* A stylish serif font for paragraphs */
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
 a {
   transition: 0.5s all ease;
   text-decoration: none;
+  font-family: "Lora", serif; /* A stylish serif font for paragraphs */
 }
 
 img {
@@ -703,7 +728,7 @@ ul {
 .banner-content h1 {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 85px;
+  font-size: 43px;
   max-width: 860px;
 }
 .banner-content p {
