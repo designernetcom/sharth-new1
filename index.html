@@ -44,7 +44,86 @@
     <title>Sharth Engineers</title>
 
     <link rel="icon" type="image/png" href="">
- 
+ <style>
+/* General Styles */
+
+
+.media-29101 {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    opacity: 0;
+    transform: translateY(20px); /* For animation */
+    animation: fadeInUp 1s ease-out forwards;
+    margin-bottom: 7px;
+     padding: 14px;
+  
+}
+
+.media-29101:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); */
+}
+
+/* Image Styles */
+.media-29101 img {
+    max-width: 100%;
+    border-radius: 10px;
+    /* margin-bottom: 15px; */
+}
+
+/* Title and Description */
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-desc {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.common-btn1 {
+    padding: 10px 20px;
+    background-color: #008dd2;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+.common-btn1:hover {
+    background-color: #008dd2;
+    color:#000;
+    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.3);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+</style>
+
 </head>
 
 <body>
@@ -420,31 +499,28 @@
             <div class="container-fluid owl-6-style">
 
                 <div class="section-title">
-                    <h2 class="sub-title">Our Services</h2>
+                    <h2 class="sub-title" style="color:#3b82f6;">Our Services</h2>
                     
                 </div>
 
 
-                <div class="owl-carousel owl-6">
-                    <div class="media-29101">
-                        <a href="#"><img src="assets/img/service-img/laser-cutting.jpg" alt="Image"
-                                class="img-fluid"></a>
-                        <h3 style="color:#000;">Laser Cutting</h3>
-                        <p>
-                            Laser cutting is a precise and efficient technology that uses a high-powered laser beam to
-                            cut, engrave, or mark materials.
-                        </p>
-                         <div class="text-center">
-                <a class="common-btn1" href="laser-cutting.html">
-                   
-                    Read More
-                </a>
-            </div>
-                    </div>
-                    <div class="media-29101">
+                <div class="owl-carousel owl-6" >
+                    <div class="media-29101 animate-fade-up" >
+    <a href="#"><img src="assets/img/service-img/laser-cutting.jpg" alt="Image" class="img-fluid"></a>
+    <h3 >Laser Cutting</h3>
+    <p class="service-desc">
+        Laser cutting is a precise and efficient technology that uses a high-powered laser beam to cut, engrave, or mark materials.
+        <br><br>
+    </p>
+    <div class="text-center">
+        <a class="common-btn1" href="laser-cutting.html">Read More</a>
+    </div>
+</div>
+
+                    <div class="media-29101 animate-fade-up">
                         <a href="#"><img src="assets/img/service-img/cnc-bending.jpg" alt="Image" class="img-fluid"></a>
-                        <h3 style="color:#000;"> CNC bending</h3>
-                        <p>
+                        <h3 > CNC bending</h3>
+                        <p class="service-desc">
                             CNC bending, or Computer Numerical Control bending, is a precise and automated metal forming
                             process in which a CNC-controlled machine, 
                         </p>
@@ -455,11 +531,11 @@
                 </a>
             </div>
                     </div>
-                    <div class="media-29101">
+                    <div class="media-29101 animate-fade-up">
                         <a href="#"><img src="assets/img/service-img/liquid-paint-sm.jpg" alt="Image"
                                 class="img-fluid"></a>
-                        <h3 style="color:#000;"> Liquid Paint Booth</h3>
-                        <p>                          
+                        <h3 > Liquid Paint Booth</h3>
+                        <p class="service-desc">                          
 A Liquid Paint Booth is a specialized enclosure designed for the application of liquid paint on various surfaces, typically for industrial and manufacturing processes.
                        <div class="text-center">
                 <a class="common-btn1" href="liquid-paint-booth.html">
@@ -468,11 +544,11 @@ A Liquid Paint Booth is a specialized enclosure designed for the application of 
                 </a>
             </div>
                     </div>
-                    <div class="media-29101">
+                    <div class="media-29101 animate-fade-up">
                         <a href="#"><img src="assets/img/service-img/Powder-coating-sm.jpeg" alt="Image"
                                 class="img-fluid"></a>
-                        <h3 style="color:#000;">Powder coating</h3>
-                        <p>
+                        <h3 >Powder coating</h3>
+                        <p class="service-desc">
                             Powder coating is a dry finishing process that applies a powdered paint material to a
                             surface to create a durable, high-quality, and consistent finish.
                         </p>
@@ -483,13 +559,12 @@ A Liquid Paint Booth is a specialized enclosure designed for the application of 
                 </a>
             </div>
                     </div>
-                    <div class="media-29101">
+                    <div class="media-29101 animate-fade-up">
                         <a href="#"><img src="assets/img/service-img/oxy-fuel-sm.jpeg" alt="Image"
                                 class="img-fluid"></a>
-                        <h3 style="color:#000;">Oxyfuel cutting</h3>
-                        <p>
-                            Oxyfuel cutting, also known as oxy-acetylene cutting or gas cutting, is a thermal cutting
-                            process that uses fuel gases (often acetylene) and oxygen to cut through metals.
+                        <h3 >Oxyfuel cutting</h3>
+                        <p class="service-desc">
+                            Oxyfuel cutting, also known as oxy-acetylene cutting or gas cutting, is a thermal cutting process that uses fuel gases (often acetylene) and oxygen to cut through metals.
                         </p>
                         <div class="text-center">
                 <a class="common-btn1" href="oxyfuel-cutting.html">
@@ -498,10 +573,10 @@ A Liquid Paint Booth is a specialized enclosure designed for the application of 
                 </a>
             </div>
                     </div>
-                    <div class="media-29101">
+                    <div class="media-29101 animate-fade-up">
                         <a href="#"><img src="assets/img/service-img/maching-sm.jpg" alt="Image" class="img-fluid"></a>
                         <h3 style="color:#000;">Machining</h3>
-                        <p>
+                        <p class="service-desc">
                             Machining is a manufacturing process in which raw material is selectively removed from a
                             workpiece to shape it into a desired form.
                         </p>
@@ -787,6 +862,22 @@ A Liquid Paint Booth is a specialized enclosure designed for the application of 
                         <a href="#"><img src="assets/img/products/Platform.png" alt="Image" class="img-fluid"></a>
                      <button class="btn1">Platform</button>
                     </div>
+                     <div class="media-29101 text-center">
+                        <a href="#"><img src="assets/img/products/re1.jpg" alt="Image" class="img-fluid"></a>
+                     <button class="btn1"></button>
+                    </div>
+                     <div class="media-29101 text-center">
+                        <a href="#"><img src="assets/img/products/Picture1.png" alt="Image" class="img-fluid"></a>
+                     <button class="btn1"></button>
+                    </div>
+                    <div class="media-29101 text-center">
+                        <a href="#"><img src="assets/img/products/Mold.jpg" alt="Image" class="img-fluid"></a>
+                     <button class="btn1"></button>
+                    </div>
+                     <div class="media-29101 text-center">
+                        <a href="#"><img src="assets/img/products/Picture6.jpg" alt="Image" class="img-fluid"></a>
+                     <button class="btn1"></button>
+                    </div>
 
                 </div>
 
@@ -795,111 +886,48 @@ A Liquid Paint Booth is a specialized enclosure designed for the application of 
 
     </section>
 
-    <section class="team-area " style="background-image: url(assets/img/wavy-pattern.png);border: #008dd2;">
-
-
-
-        <div class="site-section bg-left-half mb-5 ptb-100 "  >
-            <div class="container owl-2-style">
-
-                <div class="section-title">
-
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h3 >
-                            Industries We Serve
-                        </h3>
-                        <div class="col-12 col-sm-12 col-lg-12">
-                            <div class="counter-item">
-                                <h3 >
-                                    <span class="odometer" data-count="9">00</span>
-                                    <span class="target">+</span>
-                                </h3>
-                                <p style="font-size: 19px;">Years Of Experience</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="owl-carousel owl-4">
-
-
-                            <div class="testimonials-item">
-                                <h3 >01.</h3>
-                                <h3 >Automotive</h3>
-                                <p >The automotive industry is one of the world’s largest and most influential sectors,
-                                    encompassing the design, development, manufacturing, marketing, and sale of motor
-                                    vehicles. </p>
-
-                            </div>
-
-                            <div class="testimonials-item">
-                                <h3 >02</h3>
-                                <h3 >Plant engineering</h3>
-                                <p >Plant engineering is a specialized field within engineering focused on the design,
-                                    operation, and maintenance of industrial facilities, also known as plants. These
-                                    facilities could include manufacturing plants, chemical processing plants, oil
-                                    refineries, and other types of industrial facilities. </p>
-
-                            </div>
-
-                            <div class="testimonials-item">
-                                <h3 >03</h3>
-                                <h3 >HVAC Technology</h3>
-                                <p >
-                                    HVAC Technology (Heating, Ventilation, and Air Conditioning) involves the systems
-                                    and technology used to manage indoor air quality, temperature, and humidity in
-                                    buildings. HVAC is essential in residential, commercial, and industrial settings to
-                                    provide comfortable and safe environments, regulate air quality, and optimize energy
-                                    efficiency </p>
-
-                            </div>
-                            <div class="testimonials-item">
-                                <h3><span>04.</span></h3>
-                                <h3>Aerospace industry</h3>
-                                <p>The aerospace industry encompasses the design, development, manufacturing, testing,
-                                    and operation of both aircraft (aviation) and spacecraft (space exploration). It is
-                                    a high-tech industry that operates at the cutting edge of engineering, technology,
-                                    and innovation. Key areas include commercial aviation, military and defense systems,
-                                    space exploration, and satellite communications. Here’s a breakdown of the primary
-                                    components, trends, challenges, and future outlook in aerospace: </p>
-
-                            </div>
-                            <div class="testimonials-item">
-                                <h3><span>05.</span></h3>
-                                <h3>Railway Industry</h3>
-                                <p>
-                                    The railway industry is a crucial sector in global transportation, enabling
-                                    efficient movement of people and goods across long distances. Railways encompass
-                                    passenger transit, freight transport, high-speed rail, and advanced systems like
-                                    magnetic levitation (maglev). </p>
-
-                            </div>
-                            <div class="testimonials-item">
-                                <h3><span>04.</span></h3>
-                                <h3>Earth Moving</h3>
-                                <p>Earth Moving refers to the processes and machinery involved in the excavation,
-                                    transportation, and manipulation of large quantities of soil, rock, and other
-                                    materials. It is a fundamental aspect of construction, mining, infrastructure
-                                    development, and various civil engineering projects. </p>
-
-                            </div>
-
-
+   <section class="team-area" style="background-image: url(assets/img/wavy-pattern.png); background-size: cover; background-position: center; border: #008dd2;">
+    <div class="site-section bg-left-half mb-5 ptb-100">
+        <div class="container owl-2-style">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="section-heading">
+                        Industries We Serve
+                    </h3>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <div class="counter-item">
+                            <h3 class="counter-number">
+                                <span class="odometer" data-count="9">00</span>
+                                <span class="target">+</span>
+                            </h3>
+                            <p class="counter-description">Years Of Experience</p>
                         </div>
                     </div>
                 </div>
-
-
-
+                <div class="col-lg-6">
+                    <div class="owl-carousel owl-4">
+                        <div class="testimonials-item">
+                            <h3 class="industry-number">01.</h3>
+                            <h3 class="industry-title">Automotive</h3>
+                            <p class="industry-description">
+                                The automotive industry is one of the world’s largest and most influential sectors, encompassing the design, development, manufacturing, marketing, and sale of motor vehicles.
+                            </p>
+                        </div>
+                        <div class="testimonials-item">
+                            <h3 class="industry-number">02.</h3>
+                            <h3 class="industry-title">Plant Engineering</h3>
+                            <p class="industry-description">
+                                Plant engineering is a specialized field within engineering focused on the design, operation, and maintenance of industrial facilities, also known as plants.
+                            </p>
+                        </div>
+                        <!-- Add additional industries here -->
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
         <section class="team-area ptb-100">
 
 

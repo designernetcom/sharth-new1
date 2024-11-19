@@ -115,6 +115,203 @@
     
 }
 
+/* General Styles */
+.review-area {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f0f9ff, #c0d6e4);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.review-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    opacity: 0; /* Hidden initially for animation */
+    transform: translateX(-50px); /* Start off-screen to the left */
+}
+
+.review-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Decorative Hover Effect */
+.review-item::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(105deg, #008dd2, #005f99);
+    z-index: 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.4s ease;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.review-item:hover::before {
+    transform: rotate(45deg) scale(1);
+    opacity: 0.15;
+}
+
+
+.review-text, p {
+    font-family: "Lora", serif; /* A stylish serif font for paragraphs */
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.review-text:hover, p:hover {
+    color: #005f99; /* Slightly change color on hover for emphasis */
+}
+
+/* Text Styles */
+.review-heading {
+    font-size: 24px;
+    color: #008dd2;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* Left-to-Right Animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.vision-item {
+    animation: slideInLeft 0.6s ease-out 0.2s forwards; /* Apply to Vision */
+}
+
+.mission-item {
+    animation: slideInLeft 0.6s ease-out 0.4s forwards; /* Apply to Mission */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-item {
+        margin-bottom: 20px;
+    }
+
+    .review-heading {
+        font-size: 20px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+}
+/* Base Styles (For larger screens) */
+.section-title h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.portfolio-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s 0.4s forwards;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.portfolio-menu li {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #008dd2;
+    border: 2px solid #008dd2;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+.portfolio-menu li:hover {
+    background-color: #008dd2;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .portfolio-menu ul {
+        gap: 10px; /* Reduce spacing between buttons */
+    }
+
+    .portfolio-menu li {
+        font-size: 14px;
+        padding: 8px 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Mobile Screens (576px and below) */
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-menu ul {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .portfolio-menu li {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%; /* Full-width buttons */
+        text-align: center;
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+}
+
+
+
 
 
 
@@ -411,62 +608,36 @@
             <div class="container">
             
                 <div class="review-area">
-               
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div class="inner">
-                            
-                                <div class="row align-items-center">
-        
-        
-                                    <div class="col-lg-6">
-                                        <div class="right">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-lg-12">
-                                                    <div class="review-item two">
-                                                          <div class="row align-items-center">
-                                                            <div class="col-lg-6">
-                                                                <h2>Vision</h2>
-                                                               
-                                                            </div>
-                                                        
-                                                        </div>
-                                                        <p>Implementing Innovative Possibilities In Metal Craftsmanship For Ensuring The Continued Satisfaction Of Our Customers.</p>
-                                                        <br>
-                                                      
-                                                    </div>
-                                                </div>
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-lg-6">
-                                        <div class="right">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-lg-12">
-                                                    <div class="review-item two">
-                                                          <div class="row align-items-center">
-                                                            <div class="col-lg-6">
-                                                                <h2>Mission</h2>
-                                                               
-                                                            </div>
-                                                        
-                                                        </div>
-                                                        <p>To Provide Effective And High-Quality Technical Products And Solutions To Our Existing Client Base While Enlarging Our Operations Using Innovative Policies.</p>
-                                                      
-                                                    </div>
-                                                </div>
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                </div>
-                            </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="inner">
+                <div class="row align-items-center">
+                    <!-- Vision Section -->
+                    <div class="col-lg-6">
+                        <div class="review-item two vision-item">
+                            <h2 class="review-heading">Vision</h2>
+                            <p class="review-text" >
+                                Implementing Innovative Possibilities In Metal Craftsmanship For Ensuring The Continued Satisfaction Of Our Customers.
+                                <br><br>
+                            </p>
                         </div>
-                       
+                    </div>
+
+                    <!-- Mission Section -->
+                    <div class="col-lg-6">
+                        <div class="review-item two mission-item">
+                            <h2 class="review-heading">Mission</h2>
+                            <p class="review-text">
+                                To Provide Effective And High-Quality Technical Products And Solutions To Our Existing Client Base While Enlarging Our Operations Using Innovative Policies.
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
 
@@ -551,25 +722,22 @@ At Sharth Engineers, we are driven by a simple yet powerful mission: to deliver 
 
 
 
-       <div class="container pt-100 pb-70" >
-         <div class="row">
-                 <div class="section-title text-center" >
-                   
-                    <h2>Certificate</h2>
-                </div>
-           
-         </div>
-         <div class="portfolio-menu mt-2 mb-4">
-            <ul>
-               
-               <li class="btn btn-outline-dark" data-filter=".gts"> ISO 9001-2015</li>
-               <li class="btn btn-outline-dark" data-filter=".lap">AS 9100D</li>
-               <li class="btn btn-outline-dark text" data-filter=".selfie"> EN15085 -2 Class 1</li>
-               <li class="btn btn-outline-dark text" data-filter=".selfie">  ISO 3834 -2</li>
-            </ul>
-         </div>
-    
-      </div>
+       <div class="container pt-100 pb-70">
+   <div class="row">
+       <div class="section-title text-center">
+           <h2>Certificate</h2>
+       </div>
+   </div>
+   <div class="portfolio-menu mt-2 mb-4">
+       <ul>
+           <li class="btn btn-outline-dark" data-filter=".gts">ISO 9001-2015</li>
+           <li class="btn btn-outline-dark" data-filter=".lap">AS 9100D</li>
+           <li class="btn btn-outline-dark text" data-filter=".selfie">EN15085 -2 Class 1</li>
+           <li class="btn btn-outline-dark text" data-filter=".selfie">ISO 3834 -2</li>
+       </ul>
+   </div>
+</div>
+
       
 
         <!-- Team -->
