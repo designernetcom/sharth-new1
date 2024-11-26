@@ -726,9 +726,9 @@ ul {
   background-color: #008dd2;
 }
 .banner-content h1 {
-  color: #fff;
+  color: #008dd2;
   margin-bottom: 10px;
-  font-size: 43px;
+  font-size: 28px;
   max-width: 860px;
 }
 .banner-content p {
@@ -1260,7 +1260,7 @@ ul {
 
 /*-- Skills --*/
 .skills-area .skills-img {
-  background-image: url("../img/welder-9006762_1280.jpg");
+  background-image: url("../img/banner/factory.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4000,7 +4000,7 @@ footer {
 .page-title-area {
   height: 520px;
   position: relative;
-  background-image: url("../img/ai-generated-8861232_1920.jpg");
+  background-image: url("../img/banner/insidefactory.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
