@@ -325,6 +325,8 @@ ul {
   display: none;
 }
 
+
+
 .main-nav {
   background: #fff;
   padding-top: 0;
@@ -2059,15 +2061,15 @@ footer {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 100px;
-	padding-bottom: 68px;
+  padding-top: 70px;
+	padding-bottom: 8px;
 }
 
 .footer-item {
   margin-bottom: 30px;
 }
 .footer-item h3 {
-  font-size: 16px;
+  font-size: 19px;
 	font-weight: 700;
 	line-height: 30px;
 	text-transform: capitalize;
@@ -2152,8 +2154,10 @@ footer {
   color: #fff;
 }
 .footer-item .footer-company ul li a {
-  color: #cadfff;
-  display: inline-block;
+ font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1px;
 }
 .footer-item .footer-company ul li a:hover {
   color: #fff;
@@ -2162,9 +2166,9 @@ footer {
 
 /*-- Copyright --*/
 .copyright-area {
-  margin-top: 70px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid #1b437f;
 }
 .copyright-area .newsletter-form {
@@ -3394,7 +3398,7 @@ footer {
   top: 20px;
 }
 .help-area .help-img {
-  background-image: url("../img/help-bg.jpg");
+  background-image: url("../img/boss.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6109,7 +6113,7 @@ footer {
   bottom: 15px;
   right: 0;
   color: #ffffff;
-  background-color: #f26522;
+  background-color: #008dd2;
   z-index: 4;
   width: 45px;
   text-align: center;
